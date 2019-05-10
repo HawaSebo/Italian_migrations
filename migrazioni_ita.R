@@ -2,10 +2,7 @@
 
 # libraries
 library(tidyverse)
-library(hrbrthemes)
 library(haven)
-library(mapdata)
-library(viridis)
 library(gganimate)
 library(scales)
 
@@ -93,7 +90,8 @@ anim <- data %>%
   ease_aes()+
   labs(title = "Internal migration rates in Italy • {frame+1951}",
        subtitle = "Yearly incoming internal migrants over resident population",
-       caption = "Data: ISTAT  •  code: @PaoloCrosetto")
+       caption = "Data: ISTAT  •  code: @PaoloCrosetto")+
+  guides(fill = guide_legend(reverse = TRUE))
 
 #animation
 animate(plot = anim, 
