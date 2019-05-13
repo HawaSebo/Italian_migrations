@@ -7,7 +7,7 @@ library(gganimate)
 library(scales)
 
 # setwd
-setwd("/home/paolo/Dropbox/R playground/migrazioni ita/")
+#setwd("/home/paolo/Dropbox/R playground/migrazioni ita/")
 
 # migration data
 df <- read_csv("saldi_migratori.csv")
